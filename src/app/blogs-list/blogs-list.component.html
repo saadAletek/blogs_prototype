@@ -1,0 +1,16 @@
+<div class="container">
+    <header class="header">
+      <h1>Blog List</h1>
+      <p>Browse through our latest blog posts.</p>
+    </header>
+    
+    <div class="blog-list">
+        @for(blog of blogs; track blog){
+            <div class="blog-item" [routerLink]="'blogs/' + blog.id">
+                <div class="blog-title">
+                  {{blog.name}}
+                </div>
+              </div>
+        }
+    </div>
+  </div>

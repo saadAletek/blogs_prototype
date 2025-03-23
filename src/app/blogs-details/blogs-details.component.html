@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="text-2xl" [routerLink]="''"><</div>
+    <header class="header">
+      <h1>{{blog.name}}</h1>
+      <p>Here are the details for the {{blog.name}}</p>
+    </header>
+    
+    <div class="blog-detail" [innerHTML]="blog.content">
+      
+    </div>
+  </div>
